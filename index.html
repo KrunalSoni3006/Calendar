@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="js\Calender.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="PlayArea" ng-app = "Calender" ng-controller="CalenderCTRL as Calender">
+    <div class="header row">
+      <div class="col-sm-2">
+        <i class="fa fa-arrow-circle-o-left" aria-hidden="true" style="float:right"></i>
+      </div>
+      <div class="col-sm-8">
+          {{Calender.CurrentHeader | date:'MMM yyyy'}}
+      </div>
+      <div class="col-sm-2">
+        <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="SubSection">
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
