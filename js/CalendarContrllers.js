@@ -9,13 +9,13 @@
     var x = Months[new Date().getMonth()] + " " + new Date().getFullYear();
     CalendarAccess.CurrentHeader = x;
     CalendarAccess.PrevBtn = function() {
-      CheckNextPrevAction(CalendarAccess.CurrentHeader);
+      CheckNextAction(CalendarAccess.CurrentHeader);
     };
     CalendarAccess.NextBtn = function() {
-      CheckNextPrevAction(CalendarAccess.CurrentHeader);
+      CheckPrevAction(CalendarAccess.CurrentHeader);
     };
 
-    CheckNextPrevAction = function(Value) {
+    CheckNextAction = function(Value) {
       var pattern = new RegExp("^\d");
       if (!pattern.test(Value)) {
         var year = Value.split(" ")[1];
